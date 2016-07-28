@@ -1,0 +1,82 @@
+http://www.med.upenn.edu/webstandards/search-engine-code.html
+
+Setting up search boxes on multiple pages with a single search results page
+
+Setting up search boxes on multiple pages with a single search results page
+
+For use when the search box and results are displayed on different pages — e.g., when you want the search box to appear on all pages of your site with the results displaying on a separate page.
+
+Create a new page (follow the same instructions for "single search page" above) and save as "results.shtml" (as it corresponds to search form code).
+Search form:
+Include search form code in html according to where the search box is intended to be placed.
+
+<form action="results.shtml" method="get"> 
+  <input type="text" name="query" /> 
+  <input type="submit" name="form_submit" value="Search" /> 
+</form>
+
+To add specific URL search options (radio buttons, checkboxes, etc) to the search form, you need to add to the html (see example directly below) and script (see customization options under results page)
+
+<form action="results.shtml" method="get"> 
+  <input type="text" name="query" /> 
+  <input type="submit" name="form_submit" value="Search" /> 
+  <input type="radio" name="searchUrls" value="http://www.med.upenn.edu" /> Perelman School of Medicine 
+  <input type="radio" name="searchUrls" value="http://www.med.upenn.edu/pysch" /> Dept. of Psych 
+</form>
+
+Example of a site using a search box with URL options (radio buttons): Research website
+Search customization options
+
+Limit number of results per page (any additional results will paginate)
+
+'resultsPerPage': #
+
+Example:
+
+<script> 
+jQuery(document).ready(function($){ 
+  $('#gsa_search').gsaEmbed({ 
+    'resultsPerPage': 1 
+  }); 
+}); 
+</script>
+
+Restrict search results to one specific URL (default will search all of www.med)
+
+'searchUrls': 'http://www.med.upenn.edu/dept'
+
+Restrict search to several URLs
+
+'searchUrls': 'http://www.med.upenn.edu/dept,http://www.med.upenn.edu/dept2'
+
+Example:
+
+<script> 
+jQuery(document).ready(function($){ 
+  $('#gsa_search').gsaEmbed({ 
+    'searchUrls': 'http://www.med.upenn.edu/pmacswebteam' 
+  });
+});
+</script>
+
+Define options to select which URL to search
+
+(requires additional html markup; see adding specific URL search options above)
+
+'searchUrlOptions': { 
+  'Name/title of URL': 'http://www.med.upenn.edu/department', 
+  'Name/title of URL': 'http://www.med.upenn.edu/department2' 
+}
+
+Example
+
+<script> 
+jQuery(document).ready(function($){ 
+  $('#gsa_search').gsaEmbed({ 
+    'searchUrlOptions': { 
+    'Dept. of Psych':'http://www.med.upenn.edu/psych', 
+    'Perelman School of Medicine': 'http://www.med.upenn.edu' 
+    } 
+  }); 
+}); 
+</script>
