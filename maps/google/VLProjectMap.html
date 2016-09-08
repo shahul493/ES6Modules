@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" > 
+    <script src="Scripts/css_browser_selector.js" type="text/javascript"></script>
+    <link href="styles/VLMap.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--[if IE]><script type="text/javascript" src="Scripts/excanvas.js"></script><![endif]-->
+    <script src="Scripts/markerclusterer.js" type="text/javascript"></script>
+    <script src="Scripts/VLConstants.js"></script>  
+    <script src="Scripts/VLMapInfoControl.js"></script>
+    <script src="Scripts/VLCommonUtil.js"></script>  
+    <script src="Scripts/VLMapUtil.js" type="text/javascript"></script>
+    <script src="Scripts/VLMapInfoWindow.js" type="text/javascript"></script>
+    <script src="Scripts/VLAssetMapMarkerData.js" type="text/javascript"></script>
+    <script src="Scripts/VLAssetMarker.js" type="text/javascript"></script>
+    <script src="Scripts/VLPolygonCustomToolTip.js"></script> 
+    <script src="Scripts/MercatorProjection.js" type="text/javascript"></script>
+    <script src="Scripts/VLDxfLayers.js" type="text/javascript"></script>
+    <script src="Scripts/VLCustomMapType.js"></script>
+    <script src="Scripts/VLSitePolygon.js" type="text/javascript"></script>
+    <script src="Scripts/VLDrawPolygon.js" type="text/javascript"></script>   
+    <script src="Scripts/VLMeasureTool.js" type="text/javascript"></script>
+    <script src="Scripts/VLProjectMapLegend.js" type="text/javascript"></script>
+    <script src="Scripts/VLProjectFilterBoundary.js" type="text/javascript"></script>
+    <script src="Scripts/VLAlignmentProfile.js" type="text/javascript"></script>
+    <script src="Scripts/VLProfileSlicer.js" type="text/javascript"></script>
+    <script src="Scripts/VLLoadDumpMarker.js" type="text/javascript"></script>
+    <script src="Scripts/VLLoadDumpInfoWindow.js" type="text/javascript"></script>
+    <script src="Scripts/NavInfoMapType.js" type="text/javascript"></script>    
+    <script src="Scripts/VLMapBase.js" type="text/javascript"></script>
+    <script src="Scripts/VLProjectMap.js" type="text/javascript"></script>
+  
+    <!-- Note: any google map dependent scripts must be loaded dynamically in loadScripts to avoid errors -->
+    
+    <style> 
+        ul#navmenu input[type=checkbox]:checked + label { cursor: pointer; background:url(images/checkBoxIcon.png) no-repeat 5px center;}
+        ul#navmenu input[type=radio]:checked + label {cursor: pointer; background:url(images/radioIcon.png) no-repeat 7px center;}      
+        ul#navmenu .checked {  background:url(images/radioIcon.png) no-repeat 5px center;}
+        ul#navmenu .checkBoxChecked { background:url(images/checkBoxIcon.png) no-repeat 5px center;}
+ 		.busyCursor, .busyCursor .gm-style > div:first-child > div { cursor:url('images/cursorImage.cur'),wait; }
+    </style>  
+  
+
+</head>
+<body>    
+    <div id="map_canvas"></div>  
+</body>
+</html>

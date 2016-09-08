@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<title>ALK Markers with Labels and Info Window</title>
+<head>
+  
+    <link rel="stylesheet" type="text/css" href="../src/styles/styles.css" />
+   
+    <script src="../src/datafolder/data.json"></script>
+    <script src="../src/Scripts/jquery-1.8.3.min.js"></script>    
+    <script src="../src/Scripts/alk/ALKMaps.js"></script>    
+    
+    <!-- Events -->
+    <script src="../src/Scripts/vlmap/events/custommarkerclickevents.js"></script>
+    <script src="../src/Scripts/vlmap/events/infowindowlabelschangeevents.js"></script>     
+    
+    <!-- Enums -->    
+     <script src="../src/Scripts/vlmap/enums/enummarkers.js"></script>
+
+    <!-- controllers -->     
+     <script src="../src/Scripts/vlmap/controllers/markercontroller.js"></script>
+     <script src="../src/Scripts/vlmap/controllers/infowindowcontroller.js"></script>
+
+    <!-- controls -->
+     <script src="../src/Scripts/vlmap/controls/infowindowcontentcontrol.js"></script>
+     <script src="../src/Scripts/vlmap/controls/markerdatacontrol.js"></script> 
+     
+    <!-- this is just onload method-->
+     <script src="../src/Scripts/vlmap/controls/vlcustomcontrol.js"></script>
+
+   
+     <script type="text/javascript">
+        var map;
+        var mapController;
+        var mkrFav;
+        var iconFav;
+        var markerLayer;
+        var layer;
+        var markerClusterStrategy;
+        var markerdata;
+        var validAssets;
+        var layers;
+        var markerController;
+        var infoWindow;
+        var InfoWindowController;
+        var InfoWindowHtmlGenerator;
+        var selectedAsset;
+
+        function init() {  
+            
+            ALKMaps.APIKey = "366658D213F9F1429033919FCAE365FC";
+            map = new ALKMaps.Map("map");
+            layer = new ALKMaps.Layer.BaseMap("ALK Maps", { region: "EU" }, { displayInLayerSwitcher: false });
+            map.addLayer(layer);
+            map.setCenter(new ALKMaps.LonLat(-84.5, 40.5).transform(new ALKMaps.Projection("EPSG:4326"), map.getProjectionObject()), 2);
+                        
+            var vssBaseMap = new ALKMaps.Layer.VSSBaseMap("VSS Base Map", null, { attribution: "VSSMAP COPYRIGHT" });
+            var vlayer = new ALKMaps.Layer.Vector("Drawing Layer");
+            var vectorLayer = new ALKMaps.Layer.Vector("Vector Layer");
+            var markerClusterStrategy = new ALKMaps.Strategy.MarkerCluster({ distance: 20, threshold: 2 });
+            var markerLayer = new ALKMaps.Layer.Markers("Marker Layer", { attribution: "COPYRIGHT TEXT FOR MARKER LAYER", strategies: [markerClusterStrategy] });
+            layers = [vssBaseMap, vlayer, markerLayer, vectorLayer];
+
+            map.addLayers(layers);
+
+            markerdata = new vlmap.controls.VLMarkersData(data);
+            validAssets = markerdata.getValidData();
+            markerController = new vlmap.controllers.markercontroller(map, customMarkerLabelOptions, layers);
+            // markerController.createDefaultMarkers(validAssets);          
+            markerController.createCustomMarker(validAssets);
+
+            //Bind Events
+            $(customMarkerEvents).bind(customMarkerEvent.CUSTOM_MARKER_CLICK_EVENT.type, openInfoWindow);
+            $(InfoWindowLablesSelectionEvent).bind(InfoWindowLablesSelectionEventType.INFO_WINDOW_LABELS_SELECTION_CHANGE_EVENT.type, changeInfoWindowContent);
+            $(vlMarkerLabelSelectionEvent).bind(vlMarkerLabelSelectionEventType.VL_MARKER_LABEL_SELECTION_EVENT.type, changeMarkerContent);
+        }
+
+
+         /*Event Listeners*/
+        function openInfoWindow(event, obj) {
+            selectedAsset = obj;
+            InfoWindowHtmlGenerator =  new vlmap.controls.InfoWindowContent();
+            var htmlString = InfoWindowHtmlGenerator.getInfoWindowHTML(obj,infoWindowLabelsObject);
+            InfoWindowController = new vlmap.controllers.InfoWindow(map);
+            infoWindow = InfoWindowController.createInfoWindow(obj.assetID, obj.longitude, obj.latitude, 280, 180, htmlString);
+            map.addPopup(infoWindow, true);
+            infoWindow.show();
+            //map.addPopup(InfoWindow, true);
+        }
+        function changeInfoWindowContent(event, obj) {
+           var htmlString = InfoWindowHtmlGenerator.getInfoWindowHTML(selectedAsset, obj);
+            InfoWindowController.resetContent(htmlString)
+        }
+        function changeMarkerContent(event, obj) {
+            markerController.markerLabelOptions = obj;
+            markerController.removeMarkers();
+            markerController.createCustomMarker(validAssets);
+        }
+    </script>
+</head>
+<body onload="init()">
+<div style="margin:0px; z-index:99999">
+    <input type="radio" id="Radio" name="labeloption" value="0" checked/>
+    <label for="labeloptionv">vin</label>
+    
+    <input type="radio" id="Radio1" name="labeloption" value="1" />
+    <label for="labeloptionv">make</label>
+
+    <input type="radio" id="Radio2" name="labeloption" value="2" />
+    <label for="labeloptionv">hrs</label>
+
+     <input type="radio" id="Radio3" name="labeloption" value="3" />
+    <label for="labeloptionv">status</label>
+    
+    <input type="radio" id="Radio4" name="labeloption" value="4" />
+    <label for="labeloptionl">location</label>
+
+    <input type="radio" id="Radio5" name="labeloption" value="5" />
+    <label for="labeloptionf">fuel</label>
+
+    
+    </div>
+    <div>
+        <label>VIN</label><input id="vin" type="checkbox" checked />
+        <label>Fuel</label><input id="fuel" type="checkbox" checked />
+         <label>Location</label><input id="loc" type="checkbox" checked />
+         <label>Hours</label><input id="hrs" type="checkbox" checked />
+          <label>Status</label><input id="st" type="checkbox" checked />
+          <label>Model</label><input id="mke" type="checkbox" checked />
+    </div>
+
+<div id="map" style="width: 100%; height: 100%"></div>
+   
+
+
+</body>
+</html>
