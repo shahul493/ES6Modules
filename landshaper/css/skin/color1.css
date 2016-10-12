@@ -1,0 +1,49 @@
+
+/************************** 
+* Template Color skin
+***************************/
+.base-color-bg, .thm-btn, .thm-btn.inverse:hover, .sec-title span.decor-line, .sec-title-two .decor-line:before, .has-base-color-overlay:before, .post-navigation a:hover, .header .header-top .bootstrap-select > .dropdown-toggle, .header .header-navigation.navbar .right-box.nav > li > a .fa-search,.header-navigation.navbar .right-box.nav > li > a .fa-search, .header .header-navigation.navbar .right-box.nav > li > .sub-menu form button, .rev_slider_wrapper #slider1 .banner-decor-line, .single-service-box-two .icon-box i, .single-service-box-two:hover, .single-project-item .img-box .overlay .top li a, .single-project-item .img-box .overlay .bottom, .related-project-carousel .owl-nav [class*=owl-], .single-news-post ul.meta-info li + li a:before, .footer-widget.link-widget li a:hover:before, .footer-widget.subscribe-widget form button, .footer-widget.contact-widget .footer-contact-info-carousel.owl-theme .owl-dots .owl-dot.active span, .contact-form .bootstrap-select .dropdown-menu > li > a:hover, .contact-section.contact-page .footer-widget.working-hrs-widget .working-hrs li span.labed, .inner-banner, .single-sidebar .download-broucher .text-box, .single-sidebar .search-widget form button, .single-sidebar .archive-widget ul li a:hover:before, .single-sidebar .price-filter button, .single-sidebar .product-category-widget ul li:hover, .shop-page .meta-info .select-box .dropdown-menu > li > a:hover, .single-shop-item .img-box .overlay .box .content ul li a, .single-shop-item .text-box .thm-btn:hover, .cart-table tbody .available-info .icon, .cart-section .estimate-form .select-box .dropdown-menu > li > a:hover, .accordion a[role="button"]:before, .accordion.style-two a[role="button"]:before, .about-tab-wrapper ul.tab-title-box li.active a span:after, .about-tab-wrapper ul.tab-title-box li:hover a span:after, .appoinment-section .contact-form .feature-list, .add-banner,.single-service-box-four .icon-box,.single-service-box-two:hover, .single-service-box-four:hover,.single-service-box-four:hover .icon-box i,
+.accordion.style-three a[role=button],.header-navigation.navbar .right-box.nav > li > .sub-menu form button,.single-sidebar .service-list-widget ul li.active a, .single-sidebar .service-list-widget ul li:hover a,.testimonial-style-two.with-carousel .owl-theme .owl-dots .owl-dot.active span,.service-gallery-carousel .owl-nav [class*="owl-"],.header .header-top .bootstrap-select .dropdown-menu > li > a:hover,.featured-product-carousel .owl-nav [class*=owl-]{
+  background-color: #A8C41B;
+}
+
+.thm-btn, .thm-btn.inverse:hover, .thm-btn.borderd, .thm-btn.borderd.inverse:hover, .post-filter li.active span, .post-navigation a:hover, .scroll-to-top, .header .header-navigation.navbar .navbar-nav > li > .sub-menu, .header .header-navigation.navbar .navbar-nav > li > .sub-menu > li > .sub-menu, .header .header-navigation.navbar .right-box.nav > li > .sub-menu form, .rev_slider_wrapper #slider1 .banner-caption-box, .single-service-box-one .img-box .overlay .box, .single-service-box-one:hover .img-box .overlay .box, .related-project-carousel .owl-nav [class*=owl-], .single-fact-box, .single-news-post .img-box .overlay .box, .single-news-post:hover, .single-news-post:hover .img-box .overlay .box, .footer-widget.link-widget li a:hover:before, .footer-widget.contact-widget .footer-contact-info-carousel.owl-theme .owl-dots .owl-dot.active span, .client-testimonial-carousel.owl-theme .owl-dots .owl-dot span, .single-sidebar .latest-news .icon-box .overlay, .single-sidebar .categories-widget ul li a:hover:before, .single-sidebar .archive-widget ul li a:hover:before, .single-sidebar .price-filter .noUi-connect, .single-sidebar .price-filter .noUi-handle, .single-sidebar .best-seller .icon-box .overlay, .single-shop-item:hover .img-box .overlay .box, .cart-section .thm-btn.update-cart:hover, .accordion a[role="button"]:before, .accordion.style-two a[role="button"]:before, .single-team-member .img-box .overlay .box, .single-team-member:hover, .single-team-member:hover .img-box .overlay .box, .about-tab-wrapper ul.tab-title-box li.active a span:after, .about-tab-wrapper ul.tab-title-box li:hover a span:after,.header-navigation.navbar .right-box.nav > li > .sub-menu form,.single-service-box-two:hover, .single-service-box-four:hover,.single-service-box-four:hover .text-box:before,.single-service-box-two:hover .text-box:before {
+  border-color: #A8C41B;
+}
+
+.single-testimonial-home:before, .single-shop-item .img-box .offer-box .inner:before, .single-price-box .price-box:before {
+  border-top-color: #A8C41B;
+}
+
+.single-testimonial-home, .single-shop-item .img-box .offer-box .inner:before {
+  border-left-color: #A8C41B;
+}
+
+.base-color-text, .thm-btn.borderd, .thm-btn.borderd.inverse:hover, .sec-title span.tag-line, .scroll-to-top, .header .header-top ul.contact-info-list > li .inner-box i, .header .header-navigation.navbar .nav > li:hover > a,.header .header-navigation.navbar .nav > li.current > a,.header-3 .nav > li:hover > a,.header-3 .nav > li.current > a, .header .header-navigation.navbar .navbar-nav > li > .sub-menu li:hover > a, .header .header-navigation.navbar .right-box.nav > li:hover > a, .single-service-box-two:hover .icon-box i, .single-fact-box .counter, .single-fact-box .symbol, .single-fact-box:hover i, .footer-widget.link-widget li a:hover, .footer-widget.subscribe-widget p.highlight, .footer-widget.subscribe-widget .result p, .footer-widget.subscribe-widget .social li a:hover, .footer-widget.contact-widget .contact-infos li .icon-box i, .footer-bottom a, .single-testimonial-home .text-box h3, .single-testimonial-two .text-box:before, .single-testimonial-two .name-box .title-box span, .request-qoute-box p a, .request-qoute-box p span.highlight, .breadcumb-wrapper ul.link-list li span, .breadcumb-wrapper a.get-qoute, .single-sidebar .view-all, .single-sidebar .latest-news .text-box h4:hover, .single-sidebar .categories-widget ul li a:hover, .single-sidebar .archive-widget ul li a:hover, .single-sidebar .about-widget a, .single-sidebar .best-seller .text-box h4:hover, .single-sidebar .best-seller .text-box p, .single-sidebar .agent-widget h4, .single-sidebar .agent-widget ul li i, .single-shop-item .text-box p, .single-shop-item .text-box .thm-btn:hover, .login-register a, .checkout-section .payment-options .option-block .radio-block.active .icon i,
+.checkout-section .payment-options .option-block .radio-block.active label.radio-label, .single-price-box .name-box span, .accordion a[role="button"].collapsed:before, .accordion.style-two a[role="button"].collapsed:before, .about-tab-wrapper ul.tab-title-box li.active a, .about-tab-wrapper ul.tab-title-box li:hover a,.single-special-services i,.header.header-2.site-header .header-navigation.navbar .nav > li:hover > a,.header.header-2.site-header .header-navigation.navbar .nav > li.current > a,.single-service-box-four .icon-box i {
+  color: #A8C41B;
+}
+
+/*
+* setting up for improtant property
+*/
+.single-sidebar .price-filter .noUi-connect {
+  background-color: #A8C41B !important;
+}
+
+/*
+* base color darken config
+*/
+.single-service-box-two:hover {
+  border-color: #9cb719;
+}
+
+.single-service-box-two:hover:before {
+  border-top-color: #9cb719;
+}
+
+/*
+* setting up for improtant property
+*/
+
+/*# sourceMappingURL=style.css.map */
