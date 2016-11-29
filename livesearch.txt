@@ -1,3 +1,5 @@
+https://gist.github.com/pauldenato/edb46b306f6753f1e19f
+
 http://w3lessons.info/2013/12/11/live-text-search-using-jquery/
 http://jsfiddle.net/pThn6/332/
 http://stackoverflow.com/questions/35563546/search-within-bootstrap-tabs
