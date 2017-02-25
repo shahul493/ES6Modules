@@ -1,8 +1,11 @@
 ﻿
+
+
+
 function ini_events(ele) {
     ele.each(function () {
 
-        // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+        
         // it doesn't need to have a start or end
         var eventObject = {
             title: $.trim($(this).text()) // use the element's text as the event title
@@ -30,7 +33,7 @@ var d = date.getDate(),
         m = date.getMonth(),
         y = date.getFullYear();
 $('#calendar').fullCalendar({
-    height:"700",
+    height: 755,
     header: {
         left: 'prev,next today',
         center: 'title',
@@ -44,6 +47,9 @@ $('#calendar').fullCalendar({
         week: 'week',
         day: 'day'
     },
+    disableDragging: true,
+    disableResizing: true,
+  
     eventRender: function (event, element) {
         
 
@@ -58,7 +64,7 @@ $('#calendar').fullCalendar({
             borderColor: "#f56954" //red
         },
         {
-            title: 'Long Event',
+            title: 'Idly dabba launches lunch buffet-Please join with us',
             start: new Date(y, m, d - 5),
             end: new Date(y, m, d - 2),
             backgroundColor: "#f39c12", //yellow
@@ -106,7 +112,7 @@ $('#calendar').fullCalendar({
         copiedEventObject.borderColor = $(this).css("border-color");
 
         // render the event on the calendar
-        // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+        
         $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
 
         // is the "remove after drop" checkbox checked?

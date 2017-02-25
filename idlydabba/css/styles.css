@@ -43,6 +43,11 @@ body {
     padding-bottom: 0;
 }
 
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .scrollup {
   background-color: #333;
   background-image: url(../images/arrow.png);
@@ -541,6 +546,7 @@ body {
 
 .know-the-status {
   background-color: #AAB2BD;
+
 }
 
 .know-the-status .form-group label {
@@ -601,7 +607,10 @@ margin-bottom:2rem;
   font-size: 2rem;
   color: #000;
 }
-
+ .pad5{
+      padding-left:5px;
+      padding-right:5px;
+  }
 .meal-plan {
   background-color: #AAb2bd;
   color: #fff;

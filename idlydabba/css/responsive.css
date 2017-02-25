@@ -18,13 +18,11 @@
   .food-menu .border-side-left {
     border: 0;
   }
-  .students-content {
-    text-align: center;
-  }
   .big-number {
   font-size: 3rem;
   font-weight: normal;
 }
+    
 } /* end small */
 
 /* iphone */
@@ -32,6 +30,21 @@
 .main-header .logo {
   width: 4rem;
   display: inline-block;
+}
+.float-div-kts
+{
+    float:right;
+}
+.float-div-cal{
+    float:left;
+}
+.tooltip{
+    font-size:10px;
+    z-index:1000;
+}
+.fc-button-agendaDay, .fc-button-today
+{
+    display:none;
 }
 .know-the-status .label-box {
  padding:0;
@@ -60,6 +73,11 @@
 .login-form .login-padding {
     padding: 2rem 0;        
 }
+       .students-left-text {        
+           text-align: center;
+        font-size: 2.5rem;
+    }
+ 
     
 footer {
     text-align: center;
@@ -118,6 +136,14 @@ footer {
   hr {
     border-top: 5px solid #8e8e8e;
   }
+  #calendar{
+      padding:1rem 0;
+  }
+  .calendar .content {
+  padding:1rem 0;
+ 
+}
+ 
 } /* end iphone */
 
 /* iad */
@@ -191,5 +217,11 @@ footer {
     padding: 5px 48px;
     font-size: 2rem;
   }
-
+  .float-div-kts
+{
+    float:left;
+}
+.float-div-cal{
+    float:right;
+}
 } /* end ipad */
