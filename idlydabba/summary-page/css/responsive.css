@@ -1,3 +1,8 @@
+@media (max-width: 400px) {
+	#fullCalModal .nav>li>a {
+		padding: 10px 6px;
+	}
+}
 /* small devices */
 @media only screen and (max-width: 650px) {    
     .panel-footer .helpline {
@@ -38,6 +43,10 @@
 .float-div-cal{
     float:left;
 }
+    .float-div-kts {
+        padding-top: 0;
+    }
+
 .tooltip{
     font-size:10px;
     z-index:1000;
@@ -136,6 +145,9 @@ footer {
   hr {
     border-top: 5px solid #8e8e8e;
   }
+  #fullCalModal hr{
+	border-top: 1px solid #8e8e8e;
+  }
   #calendar{
       padding:1rem 0;
   }
@@ -225,3 +237,9 @@ footer {
     float:right;
 }
 } /* end ipad */
+@media(min-width: 1200px){
+	
+	.food-menu .border-side-left {
+	  border-left: 1px solid #fff;
+	}
+}

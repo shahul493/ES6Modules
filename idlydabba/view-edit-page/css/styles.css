@@ -1,0 +1,826 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+/* global styles */
+.container-fluid .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hide {
+    display: none !important;
+}
+
+.no-border {
+    border: 0px !important;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.no-margin {
+    margin: 0px !important;
+}
+
+.col-pad-zero {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.padding-tb-2rem {
+    padding: 2rem 0;
+}
+
+.padding-top-zero {
+    padding-top: 0;
+}
+
+.padding-btm-zero {
+    padding-bottom: 0;
+}
+
+.scrollup {
+    background-color: #333;
+    background-image: url(../images/arrow.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    text-indent: -99999px;
+    position: fixed;
+    bottom: -100px;
+    right: 25px;
+    cursor: pointer;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    -ms-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    overflow: auto;
+}
+
+.animationload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 999999;
+    /* makes sure it stays on top */
+}
+
+.loader {
+    width: 200px;
+    text-indent: -99999;
+    height: 200px;
+    font-size: 0;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(../images/ajax-loader.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+
+
+/* header styles */
+.main-header {
+    background-color: #8EC63F;
+    padding: 1rem;
+}
+
+    .main-header .logo {
+        width: 7rem;
+        display: inline-block;
+    }
+
+    .main-header .logout {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+        margin: 0rem;
+    }
+
+    .main-header .yuva-bharathi-logo {
+        width: auto;
+    }
+
+    .main-header p a {
+        font-size: 2rem;
+    }
+
+    .main-header .glyphicon-log-out,
+    .main-header .glyphicon-user {
+        padding-right: 1rem;
+    }
+
+    .main-header .logout-link,
+    .main-header .logout-link:hover,
+    .main-header .logout-link:focus {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+/* footer */
+.footer {
+    background-color: #8EC63F;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    line-height: 2rem;
+    padding: 2rem 0;
+}
+
+/* login page */
+.login-form .login-padding {
+    padding: 15rem 0;
+}
+
+.login-form .login-outer {
+    padding: 2rem;
+    border: 1px solid #ccc;
+    -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.login-form .panel-green .panel-heading,
+.login-form .panel-green .panel-footer {
+    background-color: #DFF9D2;
+}
+
+.login-form .login-greeting {
+    visibility: hidden;
+    height: 0px;
+}
+
+.login-form .btn-sign {
+    border-radius: 0;
+    background-color: #8EC63F;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+}
+
+    .login-form .btn-sign:hover,
+    .login-form .btn-sign:focus {
+        color: #FFFFFF;
+    }
+
+.login-form .btn-link,
+.login-form .btn-link:focus,
+.login-form .btn-link:hover {
+    text-decoration: none;
+    color: #8EC63F;
+    padding-left: 0px;
+}
+
+.text-green {
+    color: #8EC63F;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.login-form .checkbox label {
+    padding-left: 0rem;
+    font-size: 1.2rem;
+}
+
+    .login-form .checkbox label input {
+        display: none;
+    }
+
+    .login-form .checkbox label span {
+        height: 2rem;
+        width: 2rem;
+        border: 1px solid #8EC63F;
+        display: inline-block;
+        position: relative;
+        margin-bottom: -0.5rem;
+    }
+
+.login-form .checkbox [type=checkbox]:checked + span:before {
+    content: '\2714';
+    position: absolute;
+    top: -5px;
+    left: 2px;
+    font-size: 2rem;
+}
+
+.login-form .login-heading {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.login-form .login-label {
+    font-weight: 300;
+}
+
+.login-form .vertical-separator {
+    right: 2.2rem;
+    font-size: 2rem;
+}
+
+.login-form .glyphicon-lock {
+    right: 0.4rem;
+}
+
+.login-form .helpline {
+    font-size: 1.2rem;
+}
+
+    .login-form .helpline a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: 200;
+    }
+
+
+.login-form .txt-helpline .helpline {
+    vertical-align: middle;
+    padding: 10px 0px;
+    font-weight: 600;
+}
+
+/* dashboard page */
+.dashboard {
+    padding-bottom: 3rem;
+}
+
+    .dashboard p {
+        font-size: 2rem;
+    }
+
+    .dashboard h2 {
+        font-size: 2rem;
+        margin: 0;
+        line-height: 2;
+        text-align: left;
+        color: #FFFFFF;
+        padding-left: 1rem;
+    }
+
+    .dashboard h1 {
+        font-size: 2.5rem;
+    }
+
+    .dashboard .box-content .glyphicon-chevron-down {
+        float: right;
+        padding-right: 8px;
+        top: 1rem;
+    }
+
+    .dashboard .btn {
+        margin-bottom: 1rem;
+        border-radius: 0;
+        background-color: #8EC63F;
+        color: #FFFFFF;
+    }
+
+    
+    .btn-green {
+        margin-bottom: 1rem;
+        border-radius: 0;
+        background-color: #8EC63F;
+        color: #FFFFFF;
+    }
+
+    .dashboard .box-content {
+        text-align: center;
+    }
+
+        .dashboard .box-content .content {
+            padding: 1rem;
+        }
+
+    .dashboard .box-content {
+        background-color: #E5E4E2;
+    }
+
+    .dashboard .box1 .dashboard-header {
+        background-color: #F8704A;
+    }
+
+    .dashboard .box2 .dashboard-header {
+        background-color: #619AF3;
+    }
+
+    .dashboard .box3 .dashboard-header {
+        background-color: #57CFAC;
+    }
+
+    .dashboard .box4 .dashboard-header {
+        background-color: #A3D552;
+    }
+
+    .dashboard .dashboard-icon {
+        font-size: 4rem;
+        padding: 1rem;
+    }
+
+    .dashboard .box1,
+    .dashboard .box2,
+    .dashboard .box3,
+    .dashboard .box4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+.food-menu {
+    background-color: #646567;
+    color: #FFFFFF;
+}
+
+    .food-menu .slider h2 {
+        font-size: 1.8rem;
+    }
+
+    .food-menu .slider hr {
+        margin-bottom: 3rem;
+    }
+
+    .food-menu .margin-truck {
+        margin: 5rem 0;
+    }
+
+    .food-menu .summary-margin-truck {
+        margin: 3rem 0rem 7rem 0rem;
+    }
+
+    .food-menu .border-side-left {
+        border-left: 1px solid #fff;
+    }
+
+
+    .faqs h1,
+    .contact-us h1,
+    .food-menu h1 {
+        font-size: 3.5rem;
+    }
+
+.faqs {
+    padding-bottom: 3rem;
+}
+
+.food-menu .item-inner-left {
+    text-align: center;
+}
+
+.contact-us {
+    background-color: #646567;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    padding-bottom: 3rem;
+}
+
+    .contact-us .glyphicon {
+        font-size: 6rem;
+        color: #8EC63F;
+        margin-bottom: 1rem;
+    }
+
+    .contact-us p a,
+    .contact-us p a:hover,
+    .contact-us p a:focus {
+        color: #8EC63F;
+        text-decoration: none;
+    }
+/* faq */
+.faqs .accordion-toggle {
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    font-size: 3rem;
+    padding-top: 3rem;
+}
+
+    .faqs .accordion-toggle.active:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 17px;
+        width: 0;
+        height: 0;
+    }
+
+    .faqs .accordion-toggle:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 17px;
+        width: 0;
+        height: 0;
+    }
+
+    .faqs .accordion-toggle.active:before {
+        display: none;
+    }
+
+.faqs .accordion-content {
+    display: none;
+    font-size: 1.6rem;
+    padding-left: 4.5rem;
+}
+
+.faqs .fa-plus-circle {
+    padding-right: 2rem;
+    color: #8EC63F;
+}
+
+.faqs .fa-minus-circle {
+    padding-right: 2rem;
+    color: #8EC63F;
+}
+
+.faqs .accordion-toggle.accordion-first {
+    padding-top: 0rem;
+}
+
+.menu-list {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}
+
+    .menu-list li {
+        padding: 0.5rem 0;
+    }
+
+/* summary page */
+
+.summary-header {
+    color: #fff;
+    margin: 0px;
+}
+
+.summary-box {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.summary-box-content {
+    padding: 10px;
+}
+
+.summary {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+    .summary .box-title {
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+
+.summary-content {
+    padding: 15px 0px;
+    background-color: #fff;
+    font-size: 2.4rem;
+}
+
+.meal-plan .meal-plan-content .label-box {
+    margin: 1rem;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+}
+
+    .meal-plan .meal-plan-content .label-box .big-number {
+        font-size: 4rem;
+        font-weight: normal;
+    }
+
+.meal-plan .meal-plan-content {
+    padding-bottom: 2rem;
+}
+
+.meal-plan .item-inner-left {
+    text-align: center;
+}
+
+.meal-plan .border-side-left {
+    border-left: 1px solid #fff;
+}
+
+
+.students {
+    padding-left: 0;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+
+
+.slider {
+    position: relative;
+}
+
+
+.students-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border: 3px dashed #fff;
+}
+
+.container-fluid .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.know-the-status rect {
+    fill: #AAB2BD;
+}
+
+.know-the-status {
+    background-color: #AAB2BD;
+}
+
+    .know-the-status .form-group label {
+        font-weight: normal;
+    }
+
+.kts-content {
+    background-color: #AAB2BD;
+}
+
+.know-the-status .content {
+    /*padding: 20px;*/
+    font-size: 2rem;
+}
+
+.know-the-status .box-footer {
+    color: #fff;
+    /*margin-bottom: 5rem;*/
+}
+
+    .know-the-status .box-footer .big-number {
+        font-size: 2rem;
+    }
+
+.know-the-status .pie-chart {
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+.know-the-status .label-box {
+    padding: 0;
+}
+
+.students-txt-span {
+    font-size: 7rem;
+    font-weight: normal;
+}
+
+.students-left-text {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.big-number {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.no-shadow {
+    box-shadow: none !important;
+}
+
+#calendar {
+    padding: 3rem;
+    background: #ffffff;
+}
+
+.calendar .content {
+    padding: 1.6rem;
+    font-size: 2rem;
+    color: #000;
+}
+
+.pad5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.meal-plan {
+    background-color: #AAb2bd;
+    color: #fff;
+}
+
+    .meal-plan .content {
+        padding: 1rem;
+    }
+
+    .meal-plan .box-title {
+        font-size: 2rem;
+    }
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.pad0 {
+    padding: 0;
+}
+
+.summary-header {
+    background-color: #F8704A;
+}
+
+
+/* colors */
+
+.sub-header {
+    background-color: #646567;
+    color: #fff;
+}
+
+.fa-blue {
+    color: #29AAD1;
+}
+
+.fa-orange {
+    color: #fe8b0e;
+}
+
+.fa-white {
+    color: #fff;
+}
+
+.fa-green {
+    color: #8ec63f;
+}
+
+.color-ash {
+    color: #8e8e8e;
+}
+
+.calendar-bg {
+    background: #e5eaee;
+}
+
+/* borders */
+.brd-right {
+    border-right: 1px solid #fff;
+}
+
+.brd-top {
+    border-top: 1px solid #fff;
+}
+
+.brd-bottom {
+    border-bottom: 1px solid #fff;
+}
+
+
+/******ViewEdit******/
+
+
+.view-edit {
+    background-color: #E5EAEE;
+}
+
+    .view-edit h1 {
+        background-color: #619AF3;
+        color: #fff;
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+
+        .view-edit h1 span {
+            color: #fff;
+        }
+
+    .view-edit .export-sheet {
+        padding-top: 3rem;
+        font-weight: 700;
+    }
+
+        .view-edit .export-sheet span {
+            padding-right: 1rem;
+        }
+
+    .view-edit .div-tbl-category {
+    }
+
+.meals-attendance {
+    background-color: #c4c4c4;
+}
+
+    .meals-attendance .sub-content-bg {
+    }
+
+        .meals-attendance .sub-content-bg h1 {
+            margin-top: 10px;
+        }
+
+        .meals-attendance .sub-content-bg div {
+            height: inherit;
+            padding-top: 20px;
+        }
+
+    .meals-attendance .export-sheet {
+        padding-top: 3rem;
+        font-weight: 700;
+    }
+
+        .meals-attendance .export-sheet span {
+            padding-right: 1rem;
+        }
+
+        .meals-attendance .tbl-content{
+            padding:3rem 2rem;
+        }
+    .meals-attendance .hi-lite {
+        background-color: #DBDCDE;
+        padding: 2rem;
+       
+    }
+    .meals-attendance .tbl-head{
+        font-size:2rem;
+    }
+     .meals-attendance .btn-div{
+        padding:2rem 3rem;
+
+    }
+       .meals-attendance .tbl-submit{
+        height:280px;
+        border:1px solid #fff;
+
+    }
+    .hi-lite .head{
+       
+        font-size:2rem;
+        padding-bottom:1rem;
+    }
+    .hi-lite .group-data{
+        padding-top:1rem;
+        font-weight:700;
+    }
+    .attendancehyt{
+         height:280px;
+    }
+    .content-box{
+        border: 1px solid #fff;
+    padding: 10px;
+    margin: 10px 0px;
+    }
+.div-tbl-category table.dataTable thead th, table.dataTable thead td {
+    background-color: #619af3 !important;
+    color: #fff;
+    border-bottom: none;
+}
+
+.div-tbl-category .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0;
+}
+
+.div-tbl-category tbody tr:nth-child(even) {
+    background-color: #98bfff;
+}
+
+.div-tbl-category .dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: none;
+}
+.tbl-content .div-tbl-category
+{
+    /*height:270px;*/
+}
+table.dataTable.no-footer{
+    border-bottom:none;
+
+}
+.padbtm0{
+    padding-bottom:0;
+}
+.pad3
+{
+    padding:3rem;
+}
+.webfrombox a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+.tbl-overflow{
+    overflow:auto;
+}
