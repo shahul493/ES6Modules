@@ -1,0 +1,14 @@
+    <!--  ##### fav and touch icons ##### -->
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple144.png">
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple114.png">
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="img/apple57.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"  />
+<meta name="MobileOptimized" content="320" />
