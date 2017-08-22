@@ -1,0 +1,109 @@
+{
+  "_from": "react-step-range-slider@^1.4.1",
+  "_id": "react-step-range-slider@1.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-6ZEIshyMTjQ5g5FN+D1F3PNRvDdblneE/TIsBVXp4+28cLkOWAXEo16S8Gn6zx8IAIHwrmtEDPP5/Adl89wpIg==",
+  "_location": "/react-step-range-slider",
+  "_phantomChildren": {
+    "caniuse-db": "1.0.30000715",
+    "chalk": "1.1.3",
+    "electron-to-chromium": "1.3.18",
+    "js-base64": "2.1.9",
+    "normalize-range": "0.1.2",
+    "num2fraction": "1.2.2",
+    "postcss-value-parser": "3.3.0"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-step-range-slider@^1.4.1",
+    "name": "react-step-range-slider",
+    "escapedName": "react-step-range-slider",
+    "rawSpec": "^1.4.1",
+    "saveSpec": null,
+    "fetchSpec": "^1.4.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-step-range-slider/-/react-step-range-slider-1.4.1.tgz",
+  "_shasum": "da743d7ec60b43b2fb0befd0bc5a903a21c35acf",
+  "_spec": "react-step-range-slider@^1.4.1",
+  "_where": "C:\\Users\\SHAHUL\\Desktop\\gitRepo\\prettyPhotoSlider\\es6-react-boilerplate",
+  "author": {
+    "name": "Robert Gonzales"
+  },
+  "bugs": {
+    "url": "https://github.com/robertgonzales/react-step-range-slider/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "classnames": "^2.2.5",
+    "lodash": "^4.11.1",
+    "prop-types": "^15"
+  },
+  "deprecated": false,
+  "description": "A range slider input for React",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "6.7.7",
+    "babel-loader": "6.2.4",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.8.0",
+    "babel-preset-es2015": "6.6.0",
+    "babel-preset-react": "6.5.0",
+    "babel-preset-stage-1": "6.5.0",
+    "cheerio": "0.20.0",
+    "colors": "1.1.2",
+    "copy-webpack-plugin": "2.1.3",
+    "css-loader": "0.23.1",
+    "extract-text-webpack-plugin": "1.0.1",
+    "file-loader": "0.8.5",
+    "node-sass": "3.7.0",
+    "postcss-loader": "0.8.2",
+    "react-addons-test-utils": "15.0.1",
+    "react-hot-loader": "1.3.0",
+    "rimraf": "2.5.2",
+    "sass-loader": "3.1.2",
+    "style-loader": "0.13.0",
+    "url-loader": "0.5.7",
+    "webpack": "1.13.0",
+    "webpack-dev-server": "1.14.1"
+  },
+  "homepage": "https://github.com/robertgonzales/react-step-range-slider#readme",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "es6",
+    "breakpoint",
+    "slider",
+    "range",
+    "input",
+    "steps",
+    "step"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "react-step-range-slider",
+  "peerDependencies": {
+    "react": "^15",
+    "react-dom": "^15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertgonzales/react-step-range-slider.git"
+  },
+  "scripts": {
+    "build": "export NODE_ENV=production & NODE_ENV=production & webpack -p --config ./config/webpack.config.prod.js --progress",
+    "build:html": "node ./bin/buildHtml.js",
+    "clean:build": "node ./bin/clean.js createdir",
+    "prebuild": "npm run clean:build && npm run build:html",
+    "prepublish": "babel --plugins=transform-es2015-modules-umd,transform-class-properties src --out-dir ./dist",
+    "prestart": "node ./bin/clean.js",
+    "start": "webpack-dev-server --config ./config/webpack.config.dev.js --hot --inline --progress"
+  },
+  "version": "1.4.1"
+}
