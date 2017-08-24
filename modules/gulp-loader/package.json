@@ -1,0 +1,73 @@
+{
+  "_from": "gulp-loader",
+  "_id": "gulp-loader@1.1.2",
+  "_inBundle": false,
+  "_integrity": "sha1-FYtRcLhheBJkjlGO0uAxJ3CHuSI=",
+  "_location": "/gulp-loader",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "gulp-loader",
+    "name": "gulp-loader",
+    "escapedName": "gulp-loader",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/gulp-loader/-/gulp-loader-1.1.2.tgz",
+  "_shasum": "158b5170b8617812648e518ed2e031277087b922",
+  "_spec": "gulp-loader",
+  "_where": "C:\\Users\\SHAHUL\\Desktop\\gitRepo\\prettyPhotoSlider\\es6-react-boilerplate",
+  "author": {
+    "name": "Adriaan Callaerts",
+    "email": "adriaan.callaerts@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/call-a3/gulp-tasks/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "del": "^1.1.0",
+    "extend": "^2.0.0",
+    "gulp": "^3.8.10",
+    "gulp-plumber": "^0.6.6",
+    "gulp-util": "^3.0.1",
+    "minimist": "^1.1.0",
+    "semver": "^4.1.0"
+  },
+  "deprecated": false,
+  "description": "Gulp plugin that wraps gulp and loads tasks as seperate files from a gulp folder",
+  "devDependencies": {
+    "graceful-fs": "^3.0.4",
+    "mkdirp": "^0.5.0",
+    "mocha": "^2.0.1",
+    "q": "^1.1.2",
+    "rimraf": "^2.2.8",
+    "should": "^4.3.0",
+    "tap-spec": "^2.1.0",
+    "tape": "^3.0.3"
+  },
+  "homepage": "https://github.com/call-a3/gulp-tasks",
+  "keywords": [
+    "gulp",
+    "gulpplugin"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "gulp-loader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/call-a3/gulp-tasks.git"
+  },
+  "scripts": {
+    "install": "cd ./test && npm install && cd ..",
+    "test": "node ./test/spec.js | tap-spec"
+  },
+  "version": "1.1.2"
+}

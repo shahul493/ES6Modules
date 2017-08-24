@@ -1,0 +1,19 @@
+{
+  "name": "gulp-loader-test-settings",
+  "version": "0.0.1",
+  "private": "true",
+  "description": "Test if gulp-loader can load settings from package.json",
+  "main": "index.js",
+  "gulp": {
+    "name": {
+      "infix": "@",
+      "extension": ".coffee"
+    },
+    "dirs": {
+      "source": ".",
+      "test": "debug",
+      "dist": "production",
+      "build": "tmp"
+    }
+  }
+}

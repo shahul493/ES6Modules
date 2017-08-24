@@ -1,0 +1,9 @@
+{
+  "name": "gulp-loader-test",
+  "version": "0.0.0",
+  "private": "true",
+  "description": "Gulp plugin that wraps gulp and loads tasks as seperate files from a gulp folder",
+  "devDependencies": {
+    "gulp-rename": "^1.2.0"
+  }
+}
