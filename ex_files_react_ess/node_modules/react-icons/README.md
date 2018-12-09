@@ -1,5 +1,5 @@
 
-<img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="60" alt="React Icons">
+<img src="https://cdn.jsdelivr.net/gh/gorangajic/react-icons@master/react-icons.svg" width="60" alt="React Icons">
 
 ## [React Icons](http://gorangajic.github.io/react-icons/index.html)
 
